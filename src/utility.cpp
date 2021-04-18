@@ -18,7 +18,7 @@ void readBin(std::string _bin_path, pcl::PointCloud<PointType>::Ptr _pcd_ptr)
 		input.read((char *) &point.x, sizeof(float));
 		input.read((char *) &point.y, sizeof(float));
 		input.read((char *) &point.z, sizeof(float));
-		input.read((char *) &point.intensity, sizeof(float));
+//		input.read((char *) &point.intensity, sizeof(float));
 
 		_pcd_ptr->push_back(point);
 	}
